@@ -1,7 +1,6 @@
 var express = require('express'),
     router = express.Router(),
     controllerAlumno = require('../controller/alumnoController');
-    controllerNota = require('../controller/notaController');
 
 // Lista todos los usuarios que se pide de MySql
 router.get('/usuarios', function (req, res, next) {
