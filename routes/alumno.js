@@ -7,10 +7,6 @@ var express = require('express'),
 router.get('/usuarios', function (req, res, next) {
     controllerAlumno.listarUsers(req, res);
 });
-
-router.get('/notas', function (req, res, next) {
-    controllerNota.listarNota(req, res);
-});
 router.post('/usuarios/:nombre', (req, res, next) => {
     controllerAlumno.listarUser(req, res);
 });
